@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #1f1e1e; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    margin: 0; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.calculadora {
+    background-color: #253342; 
+    padding: 25px; 
+    border-radius: 15px; 
+    box-shadow: 0 8px 15px rgba(183, 180, 180, 0.2); 
+    width: 320px; 
+    max-width: 95%; 
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px; 
+    margin-top: 15px; 
+}
+
+input {
+    border-radius: 8px;
+    background-color: #e0e0e0; 
+    height: 60px; 
+    margin-bottom: 18px;
+    text-align: right;
+    overflow: hidden;
+    width: 100%;
+    border: none;
+    padding-right: 15px; 
+    font-size: 1.5em; 
+    box-sizing: border-box; 
+}
+
+button {
+    background-color: #434a54; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    padding: 18px; 
+    color: #fff; 
+    font-size: 1.2em; 
+    font-weight: bold; 
+    box-shadow: #1f1d1d 1px 1px 1px 1px ; 
+}
+
+button:hover {
+    background-color: #5c6a79; 
+    
+}
+
+#clear {
+    background-color: #c0392b; 
+}
+
+#clear:hover {
+    background-color: #e74c3c;
+}
+
+
+#igual {
+    background-color: #2ecc71; 
+    grid-column: span 2;
+}
+
+#igual:hover {
+    background-color: #27ae60;
+}
+
+#r {
+    grid-row: span 2;
+}
+.op {
+    background-color: #27ae60;
+}
+.operador{
+    background-color: rgb(54, 54, 230);
+}
+.operador:hover{
+    background-color:  rgb(80, 80, 230); ;
+}
+.titulo{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-size: 50px;
+
+   
+    background: linear-gradient(
+        45deg,
+        rgb(139, 233, 16),
+        rgb(224, 156, 68),
+        rgb(53, 53, 243)
+    );
+    animation: fluido 10s ease-in-out infinite;
+    color: transparent;
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    
+
+}
+@keyframes fluido {
+    0%{ background-position: 0% 100%;}
+    50%{ background-position: 100% 50%;}
+    100%{background-position: 10% 0%;}
+   
+}
+
